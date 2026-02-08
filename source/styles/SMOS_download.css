@@ -1,0 +1,11 @@
+.card {
+ background: linear-gradient(270deg, #00009c 0%, #001055 101%) 
+}
+
+.card-body >.card-title  {
+    color: white;
+}
+
+.card-body >.card-text  {
+    color: white;
+}

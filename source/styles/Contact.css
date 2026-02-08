@@ -1,0 +1,14 @@
+.link >img {
+width: 1.5em;
+position: sticky;
+margin: 0.5em;
+}
+.contact-list>.link>a {
+color: white;
+text-decoration: none;}
+
+.contact-list {
+    padding-bottom: 250px;
+}
+
+
