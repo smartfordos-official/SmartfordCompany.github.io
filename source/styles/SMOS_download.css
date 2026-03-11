@@ -1,5 +1,5 @@
-.card {
- background: linear-gradient(270deg, #00009c 0%, #001055 101%) 
+.card, .file-container-position-control-menu  {
+ background: linear-gradient(270deg, #00009c 0%, #001055 101%)
 }
 
 .card-body >.card-title  {
@@ -8,4 +8,10 @@
 
 .card-body >.card-text  {
     color: white;
+}
+
+.file-container-position-control-menu {
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
 }
