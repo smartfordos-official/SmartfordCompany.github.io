@@ -64,80 +64,36 @@
                             <button class="btn btn-primary" id="file-container-position-button" onclick="PosFunc_up_to_down()">С новых версий</button>
                         </div>
                     </div>
-                    <div class="row" id="file-items">
-                        <div class="col-lg-4 col-md-6 my-4">
-                            <div class="card" >
-                                <img src="source/files/Smartford Company logo (png).png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">SmartfordOS 2.2 </h5>
-                                    <p class="card-text">Чтобы скачать нажмите на кнопку "Скачать"</p>
-                                    <a href="https://drive.google.com/uc?export=download&id=1eDlvOdhH_NrZuY1XRjYGyH5NRsC0UEL-" class="btn btn-primary">Скачать</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 my-4">
-                            <div class="card" >
-                                <img src="source/files/Smartford Company logo (png).png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">SmartfordOS 2.1 </h5>
-                                    <p class="card-text">Чтобы скачать нажмите на кнопку "Скачать"</p>
-                                    <a href="https://drive.google.com/uc?export=download&id=1xBIveIH4i8oRew6vn8NcXRCJv4kT4mg4" class="btn btn-primary">Скачать</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 my-4">
-                            <div class="card" >
-                                <img src="source/files/Smartford Company logo (png).png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">SmartfordOS 2.0 </h5>
-                                  <p class="card-text">Чтобы скачать нажмите на кнопку "Скачать"</p>
-                                  <a href="https://drive.google.com/uc?export=download&id=1oqbxYhqwFrFTTDbqamvXAq-hih2E9Z2m" class="btn btn-primary">Скачать</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 my-4">
-                            <div class="card" >
-                                <img src="source/files/Smartford Company logo (png).png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">SmartfordOS 1.0 </h5>
-                                  <p class="card-text">Чтобы скачать нажмите на кнопку "Скачать"</p>
-                                  <a href="https://drive.google.com/uc?export=download&id=1XQwlCl1HJDTkmrIwBy5a3JOV32eW67Hf" class="btn btn-primary">Скачать</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 my-4">
-                            <div class="card" >
-                                <img src="source/files/Smartford Company logo (png).png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">SmartfordOS beta 1.2 </h5>
-                                  <p class="card-text">Чтобы скачать нажмите на кнопку "Скачать"</p>
-                                  <a href="https://drive.google.com/uc?export=download&id=1bQTYiMs58gWpALgMMsSc-WqM4zoL2H07" class="btn btn-primary">Скачать</a>
-                                </div>
-                              </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 my-4">
-                            <div class="card" >
-                                <img src="source/files/Smartford Company logo (png).png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">SmartfordOS 1.05 </h5>
-                                  <p class="card-text">Чтобы скачать нажмите на кнопку "Скачать"</p>
-                                  <a href="https://drive.google.com/uc?export=download&id=1RfxHzD7AClJ7xdTOgQODWTTsHFTQ4Gjj" class="btn btn-primary">Скачать</a>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                </div>
+                    <div class="row" id="file-items"></div>
+                        
                 <div class="col-lg-2 col-md-2"></div>
             </div>
         </div>
     </section>
+     <script src="SmCo datebase.js"></script>
      <script>
+        const file_items = document.getElementById("file-items")
         function PosFunc_down_to_up() {
           document.getElementById("file-items").style.flexWrap = "wrap-reverse"
         }
         function PosFunc_up_to_down() {
             document.getElementById("file-items").style.flexWrap = "wrap"
         }
+        window.addEventListener("load", function () {
+            SMOSdatabase.forEach(product => {
+               file_items.innerHTML += `
+                        <div class="col-lg-4 col-md-6 my-4">
+                            <div class="card" >
+                                <img src="${product.preview_link}" class="card-img-top" alt="${product.title} preview">
+                                <div class="card-body">
+                                    <h5 class="card-title">${product.title}</h5>
+                                    <p class="card-text">Чтобы скачать нажмите на кнопку "Скачать"</p>
+                                    <a href="${product.download_link}" class="btn btn-primary">Скачать</a>
+                                </div>
+                            </div>
+                        </div>` 
+            });
+        })
      </script>                   
                         
                     
