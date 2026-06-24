@@ -15,9 +15,10 @@
     margin: 20px;
     background: linear-gradient(270deg, #00009c 0%, #001055 101%);
     padding: 5px;
-    border-radius: 15px;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #2d3236;
     width: 6cm;
-    height: 4cm;
 }
 
 @media (max-width:756px) {
@@ -78,11 +79,13 @@ border-radius: 15px;
 
 .news_page > .head_text_page > .data {
     text-align: right;
-    background-color: white;
-    color: black;
     width: 100px;
     height: 25px;
     float: right;
+    border-radius: 1em;
+    background-color: #212529;
+    border-style: solid;
+    border-color: #5b5e61;
 }
 
 .news_page > .head_text_page > .data > p {
@@ -97,6 +100,10 @@ border-radius: 15px;
     font-weight: bold;
 }
 
+.data-item {
+    color: white;
+    
+}
 
 @media (max-width:995px) {
     .head_container {

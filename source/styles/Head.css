@@ -1,6 +1,6 @@
  
 html body {
-    background: linear-gradient(90deg, #00009c 0%, #181818 101%);
+    background-color: #1b1f22;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }  
 
@@ -36,7 +36,7 @@ html {
 
 
 .nav-item>.nav-link:hover{
-    color: rgb(0, 110, 255);
+    color: rgb(1, 136, 247);
 }
 
 #nav-bar_list .nav-link.active, .navbar-nav{
@@ -56,6 +56,13 @@ section {
 
 .carousel-inner {
     margin: auto auto;
+}
+
+.carousel-item > .d-block > .row 
+> div > img {
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #2d3236;
 }
 
 .carousel-item > .d-block > .row {
@@ -78,11 +85,32 @@ p>.bold_text {
 font-weight: bold;
 }
 
+.code_text {
+  background-color: #2b2b2b; 
+  border-radius: 1em;
+  margin: 1em;
+  padding: 0.5em;
+  border-style: solid;
+  border-color:  #434446;
+}
+
 section {
   background: url(images/фон_SmartFordoS3.png);
   padding-bottom: 250px;
 
 
+}
+
+.head-section  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-section > .smartford-logo {
+    margin: 10px;
+    width: 70px;
 }
 
 footer {
@@ -99,8 +127,28 @@ footer > p {
     
 }
 
+footer > .sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 1em;
+}
+
+.sponsors > a > .sponsors-logo {
+margin: 1em;
+}
+
 @media (max-width:800px) {
  #carouselExampleIndicators > .carousel-indicators  {
     display: none;
  }
+ footer > .sponsors {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin: 1em;
+}
+
 }

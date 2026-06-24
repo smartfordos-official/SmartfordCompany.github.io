@@ -1,5 +1,12 @@
 .card, .file-container-position-control-menu  {
- background: linear-gradient(270deg, #00009c 0%, #001055 101%)
+ background: linear-gradient(270deg, #00009c 0%, #001055 101%);
+ border-radius: 1em;
+ border-style: solid;
+ border-color: #2d3236;
+}
+
+ #card {
+    --bs-card-border-radius : 2em;
 }
 
 .card-body >.card-title  {
@@ -10,8 +17,14 @@
     color: white;
 }
 
+.card > img {
+    border-radius: 2em;
+    padding: 0.5em;
+} 
+
 .file-container-position-control-menu {
     margin: 20px;
     padding: 10px;
     align-items: center;
 }
+
