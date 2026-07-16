@@ -1,1 +1,1 @@
-# SmartfordCompany.github.io
+# Старая версия сайта на GitHub Pages
