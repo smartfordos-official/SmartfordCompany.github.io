@@ -59,8 +59,20 @@ const Newsdatabase = [{
   <p>
     Для SmartfordOS версии 1 вышло обновление в виде обновления 1.5, которое добавило программу для обновления системы, а также небольшое обновление браузера. Предполагается что будет последнее обновление для версии 1.0 и августе поддержка окончательно прекратится.
   </p><p>В ближайшее время уже ожидается прекращение поддержки версии 1, из-за отсуствия библиотки VBA/JSON. Поэтому рекомендуем поскорее обновится до версии 2.0</p>`, author: "Smartford Insider"
+},
+{
+  id:7 ,name: "Обновление SMOS 2.5, что нового?", data: {
+      day: "07.", month: "08.", year: "2026",
+  }, preview: "source/images/News_images/SmartfordOS 2.0 relise.png", text: `
+  <p>
+    Вышло новое обновление SMOS 2.5, В этом обновлении мы немного улушчили систему, добавив приложение с новостями SMOS, это будет последняя версия SMOS сделанная на базе PowerPoint.
+  </p><p>Далее наша система перейдет в Web формат и будет сделана на базе TypeScript. Засчет этого ситема станет более функциональной и простой</p><p>В ближайшее время также завершится поддержка SMOS версии 1.</p>`, author: "Smartford Insider"
 }]
 const SMOSdatabase = [
+  {title:"SmartfordOS 2.5 ",
+  download_link:"https://drive.google.com/uc?export=download&id=1-JzVFeCc1a7152ycIt0B4g2__mQyKwZ4",
+  preview_link:"source/images/News_images/SmartfordOS 2.0 relise.png"
+},
 {title:"SmartfordOS 1.5 ",
   download_link:"https://drive.google.com/uc?export=download&id=17CTxdJcrBh97teiECSa8jmdZ4HSo-KbB",
   preview_link:"source/images/News_images/SmartfordOS 1.2 relise.png"
